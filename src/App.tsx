@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactFullpage from "@fullpage/react-fullpage";
 
-function App() {
+const Home: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ReactFullpage
+      licenseKey="OPEN-SOURCE-GPLv3-LICENSE"
+      render={() => (
+        <div className='text-center bg-black'>
+          <div className='section'>
+              <div className='flex'>
+                  <h1 className='text-4xl font-light text-transparent bg-clip-text bg-gradient-to-br from-indigo-300 to-emerald-300'>My name is banana!</h1>
+                  <img src='https://media.discordapp.net/attachments/935880146580295690/935883483098791936/1639653591409.png' alt='' />
+              </div>
+          </div>
+        </div>
+      )}
+    />
   );
-}
+};
 
-export default App;
+export default Home;
